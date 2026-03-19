@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Data (raw data files are large, download via Kaggle)
+data/raw/*.csv
+
+# Models (generated, not tracked)
+models/*.pkl
+models/*.json
+
+# Output (generated)
+output/*.txt
+output/*.png
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual env
+venv/
+.env/
