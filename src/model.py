@@ -13,8 +13,15 @@ import pandas as pd
 import numpy as np
 import joblib
 from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, log_loss, brier_score_loss
-from xgboost import XGBClassifier
+
+# Try XGBoost first, fall back to sklearn's GradientBoosting
+try:
+    from xgboost import XGBClassifier
+    _HAS_XGBOOST = True
+except (ImportError, OSError):
+    _HAS_XGBOOST = False
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import (
@@ -41,7 +48,14 @@ class BracketModel:
         if model_type in ("logistic", "ensemble"):
             self._logistic = LogisticRegression(**LOGISTIC_PARAMS)
         if model_type in ("xgboost", "ensemble"):
-            self._xgboost = XGBClassifier(**XGBOOST_PARAMS)
+            if _HAS_XGBOOST:
+                self._xgboost = XGBClassifier(**XGBOOST_PARAMS)
+            else:
+                # Fallback: sklearn GradientBoosting (no libomp needed)
+                self._xgboost = GradientBoostingClassifier(
+                    n_estimators=200, max_depth=4, learning_rate=0.05,
+                    subsample=0.8, random_state=RANDOM_SEED,
+                )
 
     # ── Training ──────────────────────────────────────────────────────────
 
