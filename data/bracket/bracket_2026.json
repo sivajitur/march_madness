@@ -1,0 +1,91 @@
+{
+  "year": 2026,
+  "regions": {
+    "East": {
+      "1": "Duke",
+      "16": "American / Mount St. Mary's",
+      "8": "Mississippi State",
+      "9": "Baylor",
+      "5": "Michigan State",
+      "12": "UC San Diego",
+      "4": "Arizona State",
+      "13": "Yale",
+      "6": "Illinois",
+      "11": "Xavier / Texas",
+      "3": "Wisconsin",
+      "14": "Lipscomb",
+      "7": "Saint Mary's",
+      "10": "Vanderbilt",
+      "2": "Alabama",
+      "15": "Robert Morris"
+    },
+    "South": {
+      "1": "Florida",
+      "16": "Norfolk State / SIU Edwardsville",
+      "8": "Gonzaga",
+      "9": "Georgia",
+      "5": "Memphis",
+      "12": "Colorado State / Drake",
+      "4": "Texas Tech",
+      "13": "Vermont",
+      "6": "Missouri",
+      "11": "North Carolina / San Diego State",
+      "3": "Kentucky",
+      "14": "Troy",
+      "7": "Kansas",
+      "10": "Arkansas",
+      "2": "Auburn",
+      "15": "Wofford"
+    },
+    "Midwest": {
+      "1": "Michigan",
+      "16": "American / Mount St. Mary's",
+      "8": "Louisville",
+      "9": "Creighton",
+      "5": "Oregon",
+      "12": "Liberty",
+      "4": "Maryland",
+      "13": "Grand Canyon",
+      "6": "BYU",
+      "11": "North Carolina / San Diego State",
+      "3": "Texas A&M",
+      "14": "Akron",
+      "7": "Nevada",
+      "10": "Butler",
+      "2": "Tennessee",
+      "15": "Southern"
+    },
+    "West": {
+      "1": "Arizona",
+      "16": "Norfolk State / SIU Edwardsville",
+      "8": "UConn",
+      "9": "Oklahoma",
+      "5": "Clemson",
+      "12": "McNeese State",
+      "4": "Purdue",
+      "13": "High Point",
+      "6": "UCLA",
+      "11": "Drake / Colorado State",
+      "3": "Iowa State",
+      "14": "Omaha",
+      "7": "Marquette",
+      "10": "New Mexico",
+      "2": "St. John's",
+      "15": "Nebraska Omaha"
+    }
+  },
+  "first_four": [
+    {"seeds": "16", "teams": ["American", "Mount St. Mary's"], "region_slot": "East/Midwest"},
+    {"seeds": "16", "teams": ["Norfolk State", "SIU Edwardsville"], "region_slot": "South/West"},
+    {"seeds": "11", "teams": ["Xavier", "Texas"], "region_slot": "East"},
+    {"seeds": "11", "teams": ["North Carolina", "San Diego State"], "region_slot": "South/Midwest"},
+    {"seeds": "12", "teams": ["Drake", "Colorado State"], "region_slot": "South/West"}
+  ],
+  "semifinal_matchups": [
+    ["East", "West"],
+    ["South", "Midwest"]
+  ],
+  "round_matchups_by_seed": {
+    "R64": [[1,16],[8,9],[5,12],[4,13],[6,11],[3,14],[7,10],[2,15]]
+  }
+}
