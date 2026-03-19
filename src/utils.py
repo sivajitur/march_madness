@@ -66,6 +66,7 @@ TEAM_NAME_MAP = {
 
     # H
     "Hawaii": "Hawai'i",
+    # I
 
     # I
     "Illinois-Chicago": "UIC",
@@ -82,6 +83,7 @@ TEAM_NAME_MAP = {
 
     # L
     "Long Beach St.": "Long Beach State",
+    "Long Island": "LIU",
     "Long Island University": "LIU",
     "Louisiana Lafayette": "Louisiana",
     "UL Lafayette": "Louisiana",
@@ -92,6 +94,7 @@ TEAM_NAME_MAP = {
     "Loyola (MD)": "Loyola Maryland",
 
     # M
+    "Miami": "Miami FL",
     "Miami (FL)": "Miami FL",
     "Miami FL": "Miami FL",
     "Miami (OH)": "Miami OH",
@@ -165,6 +168,7 @@ TEAM_NAME_MAP = {
     "TAM C. Christi": "Texas A&M Corpus Christi",
     "Texas A&M Corpus Christi": "Texas A&M Corpus Christi",
     "Texas A&M-CC": "Texas A&M Corpus Christi",
+    "Tennessee St.": "Tennessee State",
     "Texas Southern": "Texas Southern",
 
     # U
